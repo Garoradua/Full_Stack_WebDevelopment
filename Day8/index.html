@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css"/>
+</head>
+<body>
+    <h1 id="header">Signup</h1>
+
+    <form id="form-changes">
+        <h3  class="main-content">Full Name</h3>
+        <input  class="main-content"type="text" name="fullname"/>
+        <h3 class="main-content">Email</h3>
+        <input class="main-content" type="email" name="email-id"/>
+        <h3 class="main-content">Age</h3>
+        <input class="main-content" type="number" name="Age"/>
+        <h3 class="main-content">password</h3>
+        <input class="main-content"type="password" name="password"/>
+        <h3 class="main-content">confirm password</h3>
+        <input class="main-content" type="password" name="confirm password"/>
+        <h3 class="main-content">Gender:</h3>
+        <label>
+        <input  type="radio" name="Gender" value="1"/><span>male</span>
+    </label>
+    <label>
+        <input  type="radio" name="Gender" value="2"/><span>female</span>
+    </label>
+    <label>
+        <input  type="radio" name="Gender" value="3"/><span>others</span>
+        </label>
+        <h3 class="main-content">Security Ques:</h3>
+        <select name="option" class="main-content"><option >first</option>
+        <option name="option" value="2">second</option>
+        <option >three</option></select>
+        <textarea name="text" class="main-content" style="height: 80px;"></textarea>
+        <input type="checkbox"><span> please confirm</span><br><br>
+        <input type="submit" name="submit" value="Register" />
+    </form>
+</body>
+</html>

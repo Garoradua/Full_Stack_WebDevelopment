@@ -1,0 +1,26 @@
+body{
+    background-color: lightblue;
+}
+#header{
+    text-align: center;
+    /* margin: 0 auto; */
+}
+#form-changes{
+    width: 300px;
+    margin: 0 auto;
+    background-color: white;
+    /* text-align: center; */
+    padding: 24px;
+    /* text-align: left; */
+    padding-top: 16px;
+}
+.main-content{
+    width: 100%;
+    margin: 5px;
+    margin-top: 2px;
+}
+.main-content1{
+    width: 20%;
+    margin: 5px;
+    margin-top: 2px;
+}
