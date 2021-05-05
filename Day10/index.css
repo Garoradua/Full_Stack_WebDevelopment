@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
 body{
     background-color: #f2f6ff;
     margin: 0;
     font-family: Raleway,sans-serif;
+    font-size: 16px;
 }
 #header-wrapper{
     width: 100%;
@@ -113,4 +119,94 @@ padding: 3px 7px;
     color: white;
     background-color: #0084ff;
 
+}
+.article-design{
+    width:30%;
+    /* padding: .7em 1.5em; */
+    background: #FFFFFF;
+    border: 1px solid rgba(0,168,255,.3);
+    box-shadow: 0 5px 20px 0 rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+
+}
+.image-design{
+    width:100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.heading-text{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: left;
+    font-size: 1.25em;
+    font-weight: 700;
+    line-height: 1.14;
+    color: #000;
+    /* padding-top: .7em ;
+    padding-bottom: .7em;
+    padding-left: 1.5em;
+    padding-right: 0;
+    padding-bottom:0; */
+    padding: 10px 24px 0;
+    display:inline-block;
+    
+}
+.course_educator{
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+    padding-top: .5em; 
+    font-family: Raleway,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: left;
+    color: #0096ff;
+    padding-top:0;
+    display: inline-block;
+    padding-top: .7em ;
+    padding-bottom: .7em;
+    padding-left: 1.5em;
+    padding-right: 0;
+    padding-top:0;
+
+
+} 
+.date-design{
+    font-family: 'Roboto', sans-serif;    font-weight: 300;
+    font-style: normal;
+    color: #000;
+    font-size: 15px;
+    padding-top:0;
+   
+
+}
+.course-info{
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.43;
+    letter-spacing: .35px;
+    text-align: left;
+    color: #000;
+    margin: .3em 0;
+    white-space: pre-wrap;
+    opacity: .5;
+    padding-top: 6px;
+    padding: .7em 1.5em;
+
+}
+#footer-design{
+    background-color: #172146;
+    padding: 80px 16%;
+    width: 100%;
+    box-shadow: 0 -2px 0 0 rgb(0 0 0 / 10%);
+    margin-top: 15px;
 }
