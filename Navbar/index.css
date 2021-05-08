@@ -2,7 +2,7 @@
 body{
     margin:0;
     font-family: "Poppins", sans-serif;
-  background-color: pink;
+  /* background-color: pink; */
 
 }
 #header{
@@ -23,7 +23,10 @@ body{
     vertical-align: middle;
 }
 .content-div{
-    margin-left: 900px;
+
+    margin-left: 880px;
+    /* width: 50%; */
+    display: inline-block;
 }
 
 #header navbar div p{
@@ -33,6 +36,8 @@ body{
     font-weight: 600;
     vertical-align: middle;
     cursor: pointer;
+    /* position:fixed;
+    top: 0; */
     
    
 }
@@ -52,4 +57,61 @@ body{
     border-radius: 4px;
     margin-right: 16px;
     cursor: pointer;
+    
+}
+section{
+    display: inline-block;
+    margin:0;
+}
+
+
+.image-section{
+    background-image:url('https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png');
+   background-size:cover;
+    width: 100%;
+    height: 100vh; 
+    margin:0;
+    margin-top:77px;
+}
+
+
+main section article{
+    color: white;
+    text-align: center;
+    background-color: #5acda6; 
+    width: 25%;
+    padding: 112px 48px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    margin:0;
+}
+main section article h3{
+    font-weight: 600;
+    font-size: 24px;
+    margin:0;
+}
+main section article i{
+    font-size: 120px;
+    margin:0;
+}
+.green{
+    background-color: #91ac41;;
+}
+.orange{
+    background-color: #e4b476;
+}
+.pink{
+    background-color: #f69dad;
+}
+.article{
+    margin: 0px;
+    width: 100%;
+    margin-left:0;
+    margin-right:0;
+    padding: 0;
+    display: inline-block;
+    width: 100vw;
+    margin: -7px;
+
 }
