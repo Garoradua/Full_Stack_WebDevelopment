@@ -420,6 +420,8 @@ box-sizing: border-box;
     justify-content: space-between;
     max-width: 1140px;
     margin: 0 auto;
+    margin-top: 35px;
+    margin-bottom: 100px;
 
 }
 
