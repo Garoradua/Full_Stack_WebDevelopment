@@ -143,23 +143,29 @@ box-sizing: border-box;
 }
 #description-fresh-food{
     font-size: 16px;
+    max-width: 700px;
     font-weight: 500;
     margin: 0;
     color: #8b8b99;
     letter-spacing: 0.5px;
     margin-bottom: 55px;
+    margin: 0 auto;
 }
 #vegan-store-description{
     width: 100%;
     display: flex;
     padding: 24px;
     box-sizing: border-box;
+    max-width: 1140px;
+    justify-content: stretch;
+    margin: 0 auto;
 }
 #vegan-store-description article{
     box-sizing: border-box;
     width: 25%;
     text-align: center;
     padding: 24px;
+    
 }
 #vegan-store-description article i{
     background-color: #e3b375;
@@ -182,4 +188,130 @@ box-sizing: border-box;
     font-weight: 500;
     color: #8b8b99;
     /* padding:24px; */
+}
+#staff-info{
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+}
+#staff-info h3{
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 8px;
+}
+#store-staff-detail{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-top:55px;
+}
+#first-staff{
+    width: 25%;
+    text-align: center;
+    background-color: #f5f6fb;
+    padding: 40px 30px;
+    margin: 16px;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    transition: box-shadow 0.3s;
+}
+#first-staff{
+    width: 25%;
+    text-align: center;
+    background-color: #f5f6fb;
+    padding: 40px 30px;
+    margin: 16px;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    transition: box-shadow 0.3s;
+}
+#first-staff{
+    width: 25%;
+    text-align: center;
+    background-color: #f5f6fb;
+    padding: 40px 30px;
+    margin: 16px;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    transition: box-shadow 0.3s;
+}
+#second-staff{
+    width: 25%;
+    text-align: center;
+    background-color: #f5f6fb;
+    padding: 40px 30px;
+    margin: 16px;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    transition: box-shadow 0.3s;
+}
+#third-staff{
+    width: 25%;
+    text-align: center;
+    background-color: #f5f6fb;
+    padding: 40px 30px;
+    margin: 16px;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    transition: box-shadow 0.3s;
+}
+#store-staff-detail article img{
+    width: 80px;
+    margin-bottom: 25px;
+    border-radius: 50%;
+}
+.staff-member-description{
+    font-size: 14px;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    margin: 0;
+}
+#store-staff-detail article h3{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 0px;
+}
+.staff-member-designation{
+    color: #8b8b99;
+    font-size: 12px;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+#images-and-follow_us{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+#left-section-image{
+    width: 67%;
+    margin: 0;
+    height: 100vh;
+
+}
+#left-section-image img{
+    width:100%;
+}
+#right-section{
+    width: 33.33%;
+    margin: 0;
+    /* display: inline-block; */
+    background-image: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png);
+    background-position: left;
+    background-size: cover;
 }
