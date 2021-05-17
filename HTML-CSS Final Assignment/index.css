@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap');
+body{
+    margin:0;
+    font-family: 'Dosis', sans-serif;
+    color: #121213;
+    font-size: 14px;
+    line-height: 20px;
+    /* line-height: 20px; */
+    /* margin-top: 2%;
+    margin-right: 2%;
+    margin-left: 2%; */
+}
+#first-page-section{
+    width:100%;
+    height: 100vh;
+    box-sizing: border-box;
+
+}
+#background-image{
+    height: 85vh;
+    margin: 2%;
+    background-image: linear-gradient(76deg, rgba(193, 195, 204, 0.83) 35%, rgba(193, 195, 204, 0.28) 65%), url(slide-2.jpg);
+    background-position: 0px 0px, 50% 0%;
+    background-size: auto, cover;
+    background-attachment: scroll, fixed;
+    position: relative;
+
+}
+#nuuk-logo{
+    width: 90px;
+    background-color: #e47312;
+    align-self: stretch;
+    display: flex;
+    height: 110px;
+    padding-right: 35px;
+    padding-left: 35px;
+    align-items: center;
+    position: absolute;
+    /* margin-top: 2%; */
+}
+#nuuk-logo img{
+    vertical-align: middle;  
+    width: 90px;
+}
+#navbar{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    display: flex;
+    width: 90%;
+    margin-top: 2%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0%;
+    padding-left: 0%;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    height: 88px;
+}
+#navbar-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative; 
+    width: 100%;
+}
+#navbar-items p{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'Dosis', sans-serif;
+    margin-right: 2.2%;
+}
+#navbar-items p i{
+    width: 6px;
+    margin-left: 7px;
+    color: #a5a5ac;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: -10px;
+    z-index: 1;
+}
+#get-free-quote{
+    width: 170px;
+    margin-left: 18px;
+    background-color: #e47312;
+    height: 88px;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+   
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    line-height: 16px;
+}
+#get-free-quote p{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 34px 28px 31px;
+    vertical-align: middle;
+    white-space: nowrap;
+    align-items: center;
+}
+#main-text{
+    width: 58.33333333%;
+    position: absolute;
+    margin-top: 160px;
+    float: left;
+    min-height: 1px;
+    height: 85vh;
+    padding-left: 9%;
+    padding-right: 5%;
+}
+#main-text h1{
+    color: #fff;
+    font-size: 62px;
+    line-height: 70px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+#main-text p{
+    font-weight: 400;
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 42px;
+    color: hsla(0, 0%, 100%, 0.7);
+}
+#main-text a{
+    width: 25%;
+    font-size: 12px;
+    margin-top: 0px;
+    /* display: block; */
+    border-radius: 0px;
+    position: relative;
+    background-color: #e47312;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    /* min-width: 160px; */
+    box-sizing: border-box;
+    padding: 17px 32px;
+    justify-content: center;
+    transition: all 300ms ease;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+}
+#main-content-borderbox{
+    position: absolute;
+    left: auto;
+    top: auto;
+    right: 0;
+    bottom: -76px;
+    width: 813.5px;
+    padding: 15px 100px 5px 50px;
+    background-color: #e47312;
+    background-image: linear-gradient(186deg, #e47312, #ff6361);
+    height: 202px;
+    padding: 15px 100px 5px 50px;
+    /* margin-bottom: 0; */
+}
+#main-content-borderbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#main-content-borderbox div{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: flex-start;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    padding-left: 90px;
+    /* padding-right: 50px; */
+    align-items: center;
+    /* margin-right: 40px; */
+
+}
+#main-content-borderbox div img{
+    width: 24px;
+    /* margin-bottom: 15px; */
+    margin-bottom: 15px;
+    /* margin-left: 5px; */
+    
+}
+#main-content-borderbox div h1{
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+} 
+#main-content-borderbox div p{
+    margin-bottom: 5px;
+    color: hsla(0, 0%, 100%, 0.7);
+    font-size: 17px;
+    line-height: 25px;
+    margin-top: 0;
+
+}
+#social-url{
+    position: absolute;
+    left: auto;
+    top: auto;
+    right: 0%;
+    bottom: 143px;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    background-color: #0a1229;
+    box-sizing: border-box;
+}
+#social-url img{
+    max-width: 100%;
+    width: 16px;
+    vertical-align: middle;
+    /* display: inline-block; */
+    /* align-items: center; */
+    display: flex;
+    align-items: center;
+}
+.icons-layout{
+    display: flex;
+    width: 40px;
+    height: 50px;
+    /* float: left; */
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.14);
+    background-color: transparent;
+}
+.icons-layout-last{
+    display: flex;
+    width: 40px;
+    height: 50px;
+    /* float: left; */
+    align-items: center;
+    justify-content: center;
+    /* border-bottom: 1px solid hsla(0, 0%, 100%, 0.14); */
+    background-color: transparent;
+}
+
+

@@ -24,6 +24,7 @@ body{
     display: inline-block;
     margin-right: 55px;
     font-weight: 600;
+    cursor: pointer;
 }
 #header input{
     border: none;
@@ -32,6 +33,7 @@ body{
     background-color: #FFD8DB ;
     color: #5243C0;
     font-weight: 600;
+    cursor: pointer;
     
 }
 #main-section{
@@ -43,6 +45,7 @@ body{
 }
 #main-section h1{
     font-size: 70px;
+    margin-bottom: 0;
 }
 #main-section div h1 span{
     font-size: 70px;
@@ -52,6 +55,7 @@ body{
 #main-section div p{
     color: grey;
     font-weight: 400;
+    margin-top: 0;
 }
 #main-section div input{
 border: none;
@@ -83,22 +87,44 @@ padding: 18px 30px;
     border:none;
     padding: 05px 15px;
     border-radius: 20px;
-    background-color: rgb(136, 136, 136);
+    background-color: rgb(151, 145, 145);
     display: flex;
     align-items: center;
     margin-bottom: 5px;
-   
+    cursor: pointer;
+   justify-content: center;
     margin-left:0;
     
 }
-#user-in-one-line img, #user-in-one-line span, #user-in-one-line p{
-    margin-right: 40px;;
+#user-in-one-line img,  #user-in-one-line p{
+    margin-right: 40px;
 }
-.line{
+#user-in-one-line span{
+    margin-right: 50px;
+}
+.line-pink{
     height: 15px;
     width: 40px;
     border-radius: 15px;
-    background-color: pink;
+    background-color: #FED7DA;
+}
+.line-red{
+    height: 15px;
+    width: 40px;
+    border-radius: 15px;
+    background-color: #FD6534;
+}
+.line-green{
+    height: 15px;
+    width: 40px;
+    border-radius: 15px;
+    background-color: #9ED095;
+}
+.line-yellow{
+    height: 15px;
+    width: 40px;
+    border-radius: 15px;
+    background-color: #FFE4A0;
 }
 #main{
     display: flex;
@@ -106,11 +132,11 @@ padding: 18px 30px;
     width: 100%;
 }
 #img-section{
-    width: 50%;
+    width: 40%;
     margin-top:150px;
 }
 .landing-image{
-    width:100%;
+    width:100%                                                                                                                  ;
 }
 #header div p:hover{
     text-decoration: underline;
