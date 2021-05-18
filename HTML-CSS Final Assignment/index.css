@@ -263,5 +263,115 @@ body{
     /* border-bottom: 1px solid hsla(0, 0%, 100%, 0.14); */
     background-color: transparent;
 }
+#back-text > h1{
+    position: relative;
+    /* left: -53px;
+    top: -26px; */
+    color: rgba(241, 241, 247, 0.4);
+    font-size: 120px;
+    letter-spacing: 11px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin-left:50px;
+    font-weight: 600;
 
+}
+#second-page-section{
+    padding: 5% 4%;
+}
+#back-text div {
+    position: relative;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-bottom: 7%;
+align-items: center;
+box-sizing: border-box;
+font-family: 'Dosis', sans-serif;
+    color: #121213;
+    font-size: 14px;
+    line-height: 20px;
 
+}
+#back-text div h1{
+    position: relative;
+    z-index: 2;
+    margin-left: 103px;
+    margin-top: -45px;
+    margin-bottom: 0px;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#back-text div p{
+    color: #919198;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-right: 130px;
+}
+#our-specialization{
+    padding: 0 7%;
+    box-sizing: border-box;   
+    margin-top: -20px;
+}
+#our-specialization > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+#our-specialization-inner-div{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding-right: 100px;
+}
+.our-specialization-inner-div img{
+    margin-bottom: 20px;
+    width: 60px;
+}
+.our-specialization-inner-div h1{
+    margin-top: 0px;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.specialization-para{
+    margin-bottom: 10px;
+    font-family: Dosis, sans-serif;
+    color: #919197;
+    font-size: 17px;
+    line-height: 25px;
+    margin-top: 0;
+    padding-right: 34px;
+}
+.learn-more{
+    color: #919198;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#who-we-are{
+    padding: 10% 5%;
+    display: flex;
+    flex-direction: row;
+}
+#who-we-are div{
+    width: 50%;
+}
+#who-we-are div img{
+    width: 100%;
+}
