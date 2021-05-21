@@ -276,6 +276,7 @@ body{
     text-transform: uppercase;
     margin-left:50px;
     font-weight: 600;
+    
 
 }
 #second-page-section{
@@ -365,7 +366,7 @@ font-family: 'Dosis', sans-serif;
     font-weight: 600;
 }
 #who-we-are{
-    padding: 10% 5%;
+    padding: 10% 0 5% 11% ;
     display: flex;
     flex-direction: row;
 }
@@ -373,5 +374,205 @@ font-family: 'Dosis', sans-serif;
     width: 50%;
 }
 #who-we-are div img{
+    width:85%;
+}
+#back-text > p{
+    padding-left: 50px;
+    padding-right: 20%;
+    margin-bottom: 10px;
+    font-family: Dosis, sans-serif;
+    color: #919197;
+    font-size: 17px;
+    line-height: 25px;
+    box-sizing: border-box;
+}
+#back-text > h2{
+    margin-top: 60px;
+    color: #919198;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-left: 55px;
+}
+#number-count{
+    padding: 5% 5%;
+    padding-left: 12%;
+    padding-top: 0;
+    display: flex;
+    flex-direction: row;
+}
+#number-count > div{
+    display: flex;
+    flex-direction: column;
+    /* padding-right: 10%; */
+    margin-right: 10%;
+}
+.number-text{
+    margin-bottom: 10px;
+    color: #e47312;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 500;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+.number-details{
+    margin-bottom: 10px;
+    font-family: Dosis, sans-serif;
+    color: #919197;
+    font-size: 17px;
+    line-height: 25px;
+    /* padding-right: 40%; */
+    box-sizing: border-box;
+  
+}
+#grey-background{
+    padding: 8% 0% 20px 20px;
+    /* padding-right: 5%;
+    padding-left: 5%; */
+    margin-right: 2%;
+    margin-left: 2%;
+    /* background-color: #f7f8fc; */
+    background-color: #1841e7;
+}
+#six-images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
+
+}
+#six-images img{
+        padding-top: 20px;
+        padding-right: 20px;
+        width:32%;
+
+
+}
+#transparent-design{
+    margin-top: 20px;
+    margin-right: 20px;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    background-color: #e47312;
+    background-image: linear-gradient(72deg, #e47312, rgba(255, 99, 97, 0.78)), url(banner-2.jpg);
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+    margin-bottom:100px;
+}
+#transparent-design > div h1{
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    text-align: center;
+}
+#transparent-design > div p{
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 300;
+    margin-bottom: 5px;
+    color: hsla(0, 0%, 100%, 0.7);
+    text-align: center;
+}
+#transparent-design > div h2{
+    margin-top: 50px;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#all-professionals{
+    display: flex;
+    flex-direction: row;
+    padding:7%;
+    padding-top: 0;
+    /* padding-right: 10px;
+    padding-left: 10px; */
+}
+
+.professional-details{
+    width: 25%;
+    min-height: 250px;
+    position: relative;
+    float: left;
+    
+    /* width: 100%; */
+    /* min-height: 1px; */
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    color: #121213;
+    font-size: 14px;
+    /* line-height: 20px; */
+    background-color: #fff;
+    margin-right: 30px;
+}
+
+.professional-details img{
+    width: 100%;
+    height: 300px;
+    /* position: absolute; */
+    margin-bottom:0;
+}
+.professional-details h1{
+    padding: 29px 66px 0px 29px;
+    margin-top: 0px;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.professional-details p{
+    padding-bottom: 29px;
+    padding-left: 29px;
+    margin-bottom: 0px;
+    color: #bdbdc9;
+    font-size: 16px;
+    font-family: Dosis, sans-serif;
+    padding-top: 0;
+    margin-top: 0;
+}
+#social-info-two{
+    position: absolute;
+    left: auto;
+    top: auto;
+    right: 0%;
+    bottom: 0%;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #e47312;
+}
+#social-info-two img{
+    max-width: 100%;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    /* display: inline-block; */
+    /* align-items: center; */
+    display: flex;
+    align-items: center;
+}
+.testimonials{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: center;
 }
