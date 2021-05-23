@@ -1,0 +1,1688 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+body{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+    font-family: 'Dosis', sans-serif;
+    color: #121213;
+}
+
+/* HEADER BANNER CSS STARTS HERE-------------------------------------------------------------- */
+
+.banner{
+    background-image:linear-gradient(76deg, rgba(193, 195, 204, 0.83) 35%, rgba(193, 195, 204, 0.28) 65%), url(https://nuuk-e3eaa.firebaseapp.com/assets/img/slide-2.jpg);
+    height: 85vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* HEADER BANNER CSS END HERE-------------------------------------------------------------- */
+
+/* HEADER CSS STARTS HERE-------------------------------------------------------------- */
+
+.banner-header-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 88px;
+}
+
+.nav-logo{
+    height: 110px;
+    background-color: #e47312;
+    display: flex;
+    align-items: center;
+    transform: translateY(10%);
+}
+
+
+
+.nav-logo img{
+    padding-left: 35px;
+    padding-right: 35px;
+    height: 20px;
+}
+
+
+.nav-menu{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 87px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: auto 14px;
+    color: #414147;
+    letter-spacing: 1px;
+    position: relative;
+    transition: .2s;
+}
+
+.nav-menu:hover{
+    color: #e47312;
+}
+
+nav .active{
+    color: #e47312;
+}
+
+.dropdown-span{
+    position: relative;
+}
+
+.dropdown{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    background-color: #fff;
+    padding: 5px;
+    box-sizing: border-box;
+    display: none;
+    transform: translateY(-1px);
+}
+
+.dropdown-span:hover > .dropdown{
+    display: block;
+}
+
+.dropdown a{
+    color: #717177;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: nowrap;
+    width: 105px;
+}
+
+.dropdown a:hover{
+    box-sizing: border-box;
+    padding: 10px;
+    color: #e47312;
+    background-color: #dddddd;    
+}
+
+.nav-menu::before{
+    content: "";
+    width: 1px;
+    height: 0px;
+    position:absolute;
+    background-color:#E47312;
+    top: 0;
+    left: 50%;
+    transform:translateX(-50%);
+    opacity:0;
+    transition:0.2s;
+  }
+  
+.nav-menu:hover::before{
+    opacity:1;
+    height: 30px;
+  }
+  
+.nav-menu::after{
+    content: "";
+    width: 1px;
+    height: 0px;
+    position:absolute;
+    background-color:#E47312;
+    bottom: 0;
+    left: 50%;
+    transform:translateX(-50%);
+    opacity:0;
+    transition:0.2s;
+  }
+  
+.nav-menu:hover::after{
+    opacity:1;
+    height: 30px;
+  }
+
+.nav-menu-drop img{
+    margin-left: 6px;
+    width: 6px;
+}
+
+.nav-button{
+    background-color: #e47312;
+    font-family: 'Dosis', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    margin-left: 20px;
+    padding: 34px 28px 31px 28px;
+    height: 89px;
+}
+
+.nav-button:hover{
+    background-color: #e98a38;
+    transition: all 300ms ease;
+}
+
+.mobile-line-wrap{
+    display: none;
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    z-index: -1;
+    margin: 0;
+}
+.m-menu-line-1{
+    left: unset;
+    top: 50%;
+    right: 0;
+    width: 30px;
+    transform: translate(-50%, -4px);
+    height: 2px;
+    background-color: #000;
+    bottom: auto;
+    position: absolute;
+}
+.m-menu-line-2{
+    left: unset;
+    top: 50%;
+    right: 0;
+    width: 30px;
+    transform: translate(-50%, -4px);
+    height: 2px;
+    background-color: #000;
+    bottom: auto;
+    position: absolute;
+    transform: translate(-50%, 8px);
+}
+
+
+/* HEADER BANNER CSS END HERE-------------------------------------------------------------- */
+
+/* CSS OF HEADER LOWER WIDGET START---------------------------------------------------------------- */
+
+.header-lower-widget-wrapper{
+    z-index: 2;
+    display: flex;
+    width: 880px;
+    position: absolute;
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: -72px;
+    padding: 15px 50px 5px 50px;
+    background-color: #e47312;
+    background-image: linear-gradient(186deg, #e47312, #ff6361);
+        
+}
+
+.header-lower-widget{
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    /* justify-content: space-around;
+    align-items: flex-start; */
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header-widget-1{
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+
+.lower-widget-image{
+    width: 24px;
+    margin-bottom: 15px;
+}
+
+.lower-widget-heading{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+.lower-widget-para{
+    color: hsla(0, 0%, 100%, 0.7);
+    font-family: 'Dosis', sans-serif;
+    font-size: 17px;
+    line-height: 25px;
+    margin-bottom: 5px;
+    line-height: 25px;
+    margin-top: 0;
+
+}
+
+.lower-widget-anchor{
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Dosis', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+.lower-widget-anchor:hover{
+    border-bottom: 2px solid #fff;
+    transition: 0.2s;
+}
+
+/* CSS OF HEADER LOWER WIDGET END----------------------------------------------------------------------- */
+
+
+
+/* HEADER BANNER SOCIAL CSS STARTS HERE-------------------------------------------------------------- */
+
+.social-widget-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 155px;
+    padding: 10px;
+    background-color: #0a1229;
+}
+
+.social-icon{
+    color: #fff;
+    width: 40px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.14);;
+}
+
+/* HEADER BANNER SOCIAL CSS STARTS HERE-------------------------------------------------------------- */
+
+/* HEADER BANNER HEADING CSS STARTS HERE-------------------------------------------------------------- */
+
+.header-heading-wrap{
+    position: absolute;
+    left: 5%;
+    width: 75%;
+    top: 170px;
+}
+
+.header-heading{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 62px;
+    line-height: 70px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.heading-para{
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.heading-btn{
+    border: none;
+    font-size: 12px;
+    background-color: #e47312;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    min-width: 160px;
+    padding: 15px 25px;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    font-family:  'Dosis', sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 30px;
+}
+
+.heading-btn:hover{
+    background-color: #e98a38;
+    transition: all 300ms ease;
+}
+
+
+/* HEADER BANNER HEADING CSS ENDS HERE-------------------------------------------------------------- */
+
+
+
+/* SECTION 2(TWO) CSS STARTS HERE----------------------------------------------------------------------- */
+
+.section{
+    padding: 10% 5.6%;
+}
+
+.section-two-wrap{
+    padding-top: 15%;
+    padding-bottom: 5%;
+}
+
+.title-wrap-two{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7%;
+}
+
+.section-title{
+    position: relative;
+    z-index: 2;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #121213;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+}
+
+.section-title-white{
+    margin: 0;
+    position: absolute;
+    left: -5%;
+    top: -26px;
+    z-index: 1;
+    color: rgba(241, 241, 247, 0.4);
+    font-size: 120px;
+    letter-spacing: 11px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.section-right-anchor{
+    color: #919198;
+    font-family: 'Dosis', sans-serif;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+.section-right-anchor:hover{
+    border-bottom: 2px solid #E47312;
+    transition: .2s;
+}
+
+.section-two-content-wrap{
+    display: flex;
+}
+
+.section-two-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 25%;
+    margin-bottom: 5%;
+    padding-right: 5%;
+}
+
+.section-two-img{
+    margin-bottom: 20px;
+    width: 60px;
+}
+
+.section-two-head{
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #121213;
+}
+
+.section-two-para{
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-family: Dosis, sans-serif;
+    color: #919197;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.section-two-anchor{
+    color: #919198;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    margin-top: 15px;
+}
+
+.section-two-anchor:hover{
+    border-bottom: 2px solid #E47312;
+    transition: .2s;
+}
+
+
+/* SECTION 2(TWO) CSS Ends HERE----------------------------------------------------------------------- */
+
+
+/* SECTION 3(THREE) CSS STARTS HERE----------------------------------------------------------------------- */
+
+.section-three-wrap{
+    padding-top: 5%;
+    padding-bottom: 0%;
+    display: inline-flex;
+    align-items: center;
+}
+
+.section-three-wrap img{
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.section-three-wrap div{
+    width: 50%;
+    padding-left: 105px;
+    padding-right: 5px;
+}
+
+.section-three-anchor{
+    display: inline-block;
+    color: #919198;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    line-height: 20px;
+    margin-top: 25px;
+}
+
+.section-three-anchor:hover{
+    border-bottom: 2px solid #E47312;
+    transition: .2s;
+}
+
+
+.section-3-heading{
+    margin-top: 0;
+    margin-bottom: 7%;
+    position: relative;
+    z-index: 2;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #121213;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+}
+
+.section-3-head-white{
+    margin: 0;
+    left: -53px;
+    top: -26px;
+    position: absolute;
+    z-index: 1;
+    color: rgba(241, 241, 247, 0.4);
+    font-size: 120px;
+    letter-spacing: 11px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.heading-wrap-3{
+    position: relative;
+}
+
+.section-three-content p{
+    margin-bottom: 35px;
+    font-family: Dosis, sans-serif;
+    color: #919197;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+
+/* SECTION 3(THREE) CSS STARTS HERE----------------------------------------------------------------------- */
+
+
+
+/* SECTION 4(four) CSS STARTS HERE----------------------------------------------------------------------- */
+
+
+.section-four-wrap{
+    padding-top: 10%;
+    padding-bottom: 5%;
+    display: flex;
+}
+
+.sec-four-content{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    padding-right: 10%;
+}
+
+.sec-four-content h2{
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #e47312;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 500;
+}
+
+.sec-four-content p{
+    margin-bottom: 10px;
+    font-family: Dosis, sans-serif;
+    color: #919197;
+    font-size: 17px;
+    line-height: 25px;
+    margin-top: 0;
+}
+
+
+/* SECTION 4(four) CSS ENDS HERE----------------------------------------------------------------------- */
+
+
+
+/* SECTION 5(five) CSS STARTS HERE----------------------------------------------------------------------- */
+
+.section-five-wrap{
+    background-color: #F7F8FC;
+    padding: 8% 0% 20px 20px;
+}
+
+.title-wrap-five{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7%;
+}
+
+.section-title-five{
+    padding-left: 5%;
+    margin:0;
+    position: relative;
+    z-index: 2;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #121213;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+}
+
+.section-title-five-white{
+    margin: 0;
+    left: -15px;
+    top: -26px;
+    position: absolute;
+    z-index: 1;
+    color: rgba(241, 241, 247, 0.4);
+    font-size: 120px;
+    letter-spacing: 11px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.title-wrap-five a{
+    margin-right: 3%;
+}
+
+
+.sec-five-img-wrap{
+    display: flex;
+    background-color: #F7F8FC;
+}
+
+
+.project-wrapper{
+    padding-top: 20px;
+    padding-right: 20px;
+    float: left;
+}
+
+
+.image-wrap-div{
+    width: 100%;
+    position: relative;
+}
+
+.five-image{
+    width: 100%;
+    display: inline-block;
+}
+
+.five-image-overlay{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+}
+
+.view-project-div{
+    width: 90px;
+    height: 90px;
+    /* padddign-left: 11px;
+    padding-right: 11px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-image: linear-gradient(59deg, #ff6361, #e47312);
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+        
+}
+
+.image-wrap-div:hover > .five-image-overlay{
+    opacity: 1;
+    
+}
+
+/* SECTION 5(five) CSS ENDS HERE----------------------------------------------------------------------- */
+
+
+/* SECTION 6(six) CSS STARTS HERE----------------------------------------------------------------------- */
+
+
+.sec-six-wrap{
+    padding-top: 7%;
+    padding-bottom: 7%;
+    background-color: #e47312;
+    background-image: linear-gradient(72deg, #e47312, rgba(255, 99, 97, 0.78)), url(https://nuuk-e3eaa.firebaseapp.com/assets/img/banner-2.jpg);
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-six-wrap h1{
+    margin:0;
+    position: relative;
+    z-index: 2;
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    
+}
+
+.sec-six-wrap p{
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 300;
+    margin-bottom: 5px;
+    color: hsla(0, 0%, 100%, 0.7);
+}
+
+.sec-six-wrap a{
+    padding-bottom: 5px;
+    margin-top: 25px;
+    line-height: 20px;
+    border-bottom: 2px solid transparent;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.sec-six-wrap a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+
+
+/* SECTION 6(six) CSS ENDS HERE----------------------------------------------------------------------- */
+
+
+/* SECTION 7(seven) CSS STARTS HERE----------------------------------------------------------------------- */
+
+/* HEADER TEXT css IS IMPORTED FROM SECTION TWO */
+
+.sec-seven-wrap{
+    background-color: #F7F8FC;
+    padding: 10% 5.6% 5% 5.6%;
+}
+
+.seven-card-wrap{
+    display: flex;
+}
+
+.seven-card{
+    position: relative;
+    width: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.seven-card img{
+    width: 100%;
+    margin-bottom: 0px;
+    transform: translateY(3px);
+}
+
+.seven-card-text{
+    padding: 29px 66px 29px 29px;
+    background-color: #fff;
+    margin-top: 0px;
+}
+
+.seven-card-text h1{
+    line-height: 20px;
+    margin-top: 0px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #121213;
+    margin-bottom: 10px;
+}
+
+.seven-card-text p{
+    margin-bottom: 0px;
+    color: #bdbdc9;
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 0px;
+}
+
+
+.social-widget-wrap-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    background-color: #E47312;
+}
+
+.social-icon-2{
+    color: #fff;
+    width: 40px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.14);;
+}
+
+.social-icon-2-last{
+    color: #fff;
+    width: 40px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+/* SECTION 7(seven) CSS ENDS HERE----------------------------------------------------------------------- */
+
+
+/* SECTION 8(eight) CSS STARTS HERE----------------------------------------------------------------------- */
+
+
+.sec-eight-wrap{
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.eight-left-wrap{
+    width: 41.66%;
+    position: relative;
+    padding-right: 100px;
+    box-sizing: border-box;
+    /* transform: translateY(-50px); */
+}
+
+.section-8-white{
+    margin: 0;
+    position: absolute;
+    left: -10%;
+    top: -26px;
+    z-index: 1;
+    color: rgba(241, 241, 247, 0.4);
+    font-size: 120px;
+    letter-spacing: 11px;
+    line-height: 50px;
+    text-transform: uppercase; 
+}
+
+.eight-left-wrap p {
+    margin-bottom: 10px;
+    font-family: Dosis, sans-serif;
+    color: #919197;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.eight-left-wrap a{
+    display: inline-block;
+    margin-top: 25px;
+    line-height: 20px;
+    color: #919198;
+    font-family: 'Dosis', sans-serif;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+.eight-left-wrap a:hover{
+    border-bottom: 2px solid #E47312;
+}
+
+
+.eight-right-wrap{
+    width: 58.33%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+}
+
+.eight-card-left-sec{
+    width: 50%;
+}
+
+.card-wrap{
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 90%;
+    margin: 50px auto 61px;
+    padding: 80px 30px 26px;
+    background-color: #fff;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.card-top{
+    width: 60px;
+    height: 60px;
+    align-items: stretch;
+    border-radius: 100%;
+    background-image: linear-gradient(8deg, #ff6361, #e47312);
+    opacity: 1;
+    margin: -115px auto 25px;
+
+}
+
+.card-top-inner{
+    padding-top: 12px;
+    color: #fff;
+    font-size: 80px;
+    line-height: 80px;
+}
+
+.card-wrap h1{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.card-job-title{
+    margin-bottom: 0px;
+    color: #bdbdc9;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.card-wrap p{
+    margin-top: 15px;
+    margin-bottom: 0px;
+    color: #919197;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+
+
+/* --------------------------------------------------------------------- */
+
+.eight-card-right-sec{
+    width: 50%;
+    margin-top: 80px;
+}
+
+
+/* SECTION 8(eight) CSS ENDS HERE----------------------------------------------------------------------- */
+
+
+/* SECTION 9(nine) CSS STARTS HERE----------------------------------------------------------------------- */
+
+/* .section-nine-wrap{
+   
+}
+ */
+
+.title-nine{
+    margin-bottom: 7%;
+}
+
+
+.nine-card{
+    width: 33.3%;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.nine-card-wrap{
+    display: flex;
+    text-decoration: none;
+}
+
+.nine-image-wrap img{
+    width: 100%;
+    background-size: cover;
+}
+
+.nine-img-date{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    z-index: 3;
+}
+
+.date-top {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    align-items: center;
+    background-image: linear-gradient(45deg, #ff6361, #e47312);
+    color: #fff;
+    font-size: 26px;
+    font-weight: 400;
+    justify-content: center;
+}
+
+.date-bottom{
+    display: flex;
+    width: 70px;
+    height: 40px;
+    align-items: center;
+    background-color: #fff;
+    color: #9d9da5;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+
+.nine-card-content{
+    width: 100%;
+    padding: 25px 56px 25px 30px;
+    background-color: #e47312;
+    background-image: linear-gradient(158deg, #e47312, #ff6361);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transform: translateY(-4px);
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.nine-card-content h1{
+    margin-right: 0px;
+    margin-bottom: 15px;
+    font-size: 19px;
+    line-height: 26px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nine-card-content p{
+    margin-bottom: 5px;
+    color: hsla(0, 0%, 100%, 0.7);
+    font-size: 17px;
+    line-height: 25px;
+    margin-top: 0;
+    text-decoration: none;
+}
+
+.nine-anchor{
+    padding-bottom: 5px;
+    margin-top: 25px;
+    line-height: 20px;
+    border-bottom: 2px solid transparent;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nine-anchor:hover{
+    border-bottom: 2px solid #fff;
+}
+
+/* SECTION 9(nine) CSS ENDS HERE----------------------------------------------------------------------- */
+
+
+/* SECTION 10(ten) CSS STARTS HERE----------------------------------------------------------------------- */
+
+
+.sec-ten-wrap{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-image: linear-gradient(56deg, #e47312, #ff6361);
+    display: flex;
+}
+
+.ten-left{
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+
+.ten-left h1{
+    color: #fff;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 600;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    margin: 0;
+    margin-right: 60px;
+    width: 100%;
+
+}
+
+.ten-right{
+    width: 75%;
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+
+
+.ten-logo-1{
+    background-image: url(https://nuuk-e3eaa.firebaseapp.com/assets/img/logo-1w.png);
+    background-size: 100px;
+    width: 20%;
+    min-height: 100px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.ten-logo-2{
+    background-image: url(https://nuuk-e3eaa.firebaseapp.com/assets/img/logo-2w.png);
+    background-size: 100px;
+    width: 20%;
+    min-height: 100px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.ten-logo-3{
+    background-image: url(https://nuuk-e3eaa.firebaseapp.com/assets/img/logo-3w.png);
+    background-size: 100px;
+    width: 20%;
+    min-height: 100px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.ten-logo-4{
+    background-image: url(https://nuuk-e3eaa.firebaseapp.com/assets/img/logo-4w.png);
+    background-size: 100px;
+    width: 20%;
+    min-height: 100px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.ten-logo-5{
+    background-image: url(https://nuuk-e3eaa.firebaseapp.com/assets/img/logo-5w.png);
+    background-size: 100px;
+    width: 20%;
+    min-height: 100px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+
+/* SECTION 10(ten) CSS ENDS HERE----------------------------------------------------------------------- */
+
+/* FOOTER CSS starts HERE----------------------------------------------------------------------- */
+
+
+.fotter-wrap{
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 70px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-top: 1px solid #2f3038;
+    background-color: #0a1229;
+}
+
+.fotter-content-wrap{
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.f-upper-content{
+    display: flex;
+    box-sizing: border-box;
+}
+
+.f-1{
+    width: 33.3%;
+    box-sizing: border-box;
+    margin-right: 60px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.f-title-line{
+    position: relative;
+    display: flex;
+
+}
+
+.f-title-line h1{
+    display: inline-block;
+    margin-bottom: 30px;
+    padding-right: 14px;
+    background-color: #0a1229;
+    margin-right: 60px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+    margin-top: 0px;
+    box-sizing: border-box;
+}
+
+.line{
+    position: absolute;
+    left: 0%;
+    top: 8px;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    height: 1px;
+    background-color: #ff6361;
+}
+
+.f-para{
+    color: #fff;
+    font-size: 17px;
+    line-height: 25px;
+    margin-top: 0;
+}
+
+
+.f-anchor{
+    padding-bottom: 5px;
+    margin-top: 25px;
+    line-height: 20px;
+    border-bottom: 2px solid transparent;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.f-anchor:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.f2-anchor{
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    line-height: 35px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.f2-anchor:hover{
+    border-bottom: 2px solid #fff;    
+}
+
+.f3-content-wrap{
+    box-sizing: border-box;
+}
+
+.f3-phone{
+    margin-bottom: 15px;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.f3-phone img{
+    width: 20px;
+    margin-right: 15px;
+    margin-bottom: 0px;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.f3-content-heading{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.f3-content-para{
+    margin-bottom: 5px;
+    color: hsla(0, 0%, 100%, 0.7);
+    font-family: Dosis, sans-serif;
+    font-size: 17px;
+    line-height: 25px;
+    margin-top: 0;
+}
+
+/* .fotter-bottom{
+    margin-top: 80px;
+} */
+
+.f-logo-wrap{
+    margin-top: 80px;
+}
+
+.f-bottom-content{
+    height: 110px;
+    width: 90px;
+    padding-right: 35px;
+    padding-left: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #E47312;
+}
+
+.f-bottom-content img{
+    width: 90px;
+}
+
+
+/* FOTTER CSS ENDS HERE --------------------------------------------------------*/
+
+
+
+/* ----------------------------------------------------------------------------------------------- */
+/* MEDIA QUERY for mobile response starts here ------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------- */
+
+@media (max-width: 400px){
+    body{
+        margin: 0;
+    }
+
+    .banner-header-wrap nav{
+        display: none;
+    }
+    .banner-header-wrap{
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-left: 0;
+        margin-right: 0;
+        height: 60px;
+    }
+    .nav-logo{
+        height: 60px;
+        transform: translateY(0%);
+    }
+    .mobile-line-wrap{
+        display: block;
+        z-index: 2;
+    }
+    .header-lower-widget-wrapper{
+        display: none;
+    }
+    .banner{
+        height: 500px;
+        background-size: auto, cover;
+        background-position: 0px 0px, 50% 0%;
+    }
+    .social-widget-wrap{
+        bottom: 0;
+    }
+    .header-heading-wrap{
+        top: 150px;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .header-heading{
+        font-size: 40px;
+        line-height: 42px;
+    }
+    .heading-btn{
+        margin-top: 20px;
+    }
+    .section-title-white{
+        display: none;
+    }
+    .title-wrap-two{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .section-title{
+        margin-bottom: 9px;
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .section-two-content-wrap{
+        flex-direction: column;
+    }
+    .section-two-content{
+        width: 100%;
+    }
+    .section-three-wrap{
+        flex-direction: column;
+    }
+    .heading-wrap-3{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .section-3-heading{
+        margin-bottom: 15%;
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .section-3-head-white{
+        display: none;
+    }
+    .section-three-wrap img{
+        width: 100%;
+        padding-left: 2%;
+        padding-right: 2%;
+        box-sizing: border-box;
+        margin-bottom: 84px;
+    }
+    .section-three-wrap div {
+        width: 100%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .section-four-wrap{
+        flex-direction: column;
+    }
+    .sec-four-content{
+        width: 100%;
+        padding-right: 0px;
+    }
+    /* .section-five-wrap{
+        flex-direction: column;
+    } */
+    .title-wrap-five{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 15%;
+    }
+    .section-title-five{
+        margin-bottom: 15%;
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 9px;
+        padding-left: 0px;
+    }
+    .section-title-five-white{
+        display: none;
+    }
+    .sec-five-img-wrap{
+        flex-direction: column;
+        padding-right: 5%;
+    }
+    .project-wrapper{
+        width: 100%;
+        padding-right: 0px;
+    }
+    .sec-six-wrap{
+        align-items: flex-start;
+        padding: 10% 5%;
+    }
+    .sec-six-wrap h1{
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 9px;
+    }
+    .sec-six-wrap p{
+        margin-bottom: 5px;
+        color: hsla(0, 0%, 100%, 0.7);
+        margin-top: 10px;
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: 300;
+    }
+    .title-wrap-7-mobile{
+        margin-bottom: 15%;
+    }
+    .seven-card-wrap{
+        flex-direction: column;
+        margin-right: 5%;
+    }
+    .seven-card{
+        width: 100%;
+        margin-bottom:15px;
+    }
+    .sec-eight-wrap{
+        flex-direction: column;
+    }
+    .eight-left-wrap{
+        width: 100%;
+        padding-right: 0px;
+    }
+    .section-8-white{
+        display: none;
+    }
+    .eight-right-wrap{
+        flex-direction: column;
+        width: 100%;
+    }
+    .eight-card-left-sec{
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .eight-card-right-sec{
+        width: 100%;
+        margin-top: 0px;
+    }
+    .card-wrap{
+        margin-bottom: 0px;
+    }
+    .nine-card-wrap{
+        flex-direction: column;
+    }
+    .nine-card{
+        width: 100%;
+        margin-bottom: 7%;
+    }
+    .sec-ten-wrap{
+        flex-direction: column;
+        padding-top: 15%;
+        padding-bottom: 2%;
+    }
+    .ten-left{
+        width: 100%;
+        text-align: center;
+    }
+    .ten-left h1{
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .ten-right{
+        width: 100%;
+        flex-direction: column;
+    }
+    .ten-logo-1{
+        width: 100%;
+    }
+    .ten-logo-2{
+        width: 100%;
+    }
+    .ten-logo-3{
+        width: 100%;
+    }
+    .ten-logo-4{
+        width: 100%;
+    }
+    .ten-logo-5{
+        width: 100%;
+    }
+    .fotter-wrap{
+        width: 100%;
+        padding: 10% 6% 0%;
+    }
+    .f-upper-content{
+        flex-direction: column;
+    }
+    .f-1{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 39px;
+    }
+    .f-logo-wrap{
+        margin-top: 0px;
+    }
+    .f-bottom-content{
+        height: 60px;
+    }
+    .f-anchor{
+        margin-top: 5px;
+    }
+    .f2-anchor{
+        margin-bottom: 15px;
+        line-height: 20px;
+    }
+  .social-widget-wrap-2{
+        right:10px;
+  }
+}

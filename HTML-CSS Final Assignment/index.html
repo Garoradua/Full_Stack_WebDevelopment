@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NUUK Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
@@ -16,13 +17,21 @@
                    <img src="logo-white.png" />
                    </div>
                    <div id="navbar-items">
-                   <p>home</p>
-                    <p>projects</p>
-                    <p>about</p>
-                    <p>services</p>
-                    <p>blog</p>
-                    <p>pages<i class="fas fa-sort-down"></i> </p>
+                   <p class="anim-menu" style="color:#E47312">home</p>
+                    <p class="anim-menu">projects</p>
+                    <p class="anim-menu">about</p>
+                    <p class="anim-menu">services</p>
+                    <p class="anim-menu">blog</p>
+                    <div class="popup-div">
+                    <p class="anim-menu">pages<i class="fas fa-sort-down"></i> </p>
+                    <div class="popup-overlay">
+                    <p>404 error page</p>    
+                    <p>Protected Page</p>    
+                    <p>Style Guide</p>    
+                    <p>Licensing</p>    
                     </div>
+                    </div>
+                    </div>  
                     <div id="get-free-quote">
                         <p>get free quote</p>
                     </div>
@@ -50,7 +59,7 @@
                     <img src="clock.svg" />
                     <h1>OPENING TIMES</h1>
                     <p>Mon - Sat 8:00 - 17:30, Sunday - Closed</p>
-                    <h1 style="margin-top: 20px;">FIND ON MAP</h1>
+                    <h1 class="underline-white"style="margin-top: 20px;">FIND ON MAP</h1>
                 </div> 
                </div>
                <div id="social-url">
@@ -67,7 +76,7 @@
            <h1>SERVICES</h1>
            <div>
                <h1>OUR SPECIALIZATION</h1>
-               <p>VIEW ALL SERVICES</p>
+               <p class="underline-1">VIEW ALL SERVICES</p>
            </div>
        </article>
        <article id="our-specialization">
@@ -115,7 +124,7 @@
              <p>Based on collective work and shared knowledge, Nuuk aims to favor dialogue and debate, to transform individual knowledge into increased creative potential.</p>
                     
                     <p>Our studio is a architecture practice based in NY and Paris. Today, it includes 150 architects, urban planners, landscape and interior designers of 25 different nationalities. The company principle of Architecture-Studio is the collective conception. From the very beginning, the practice has believed in the virtues of exchange, crossing ideas, common effort, shred knowledge.</pre>
-                <h2>Meet the team</h2>
+                <h2 class="underline-2">Meet the team</h2>
         </article>  
     </div>
    </section>
@@ -147,22 +156,83 @@
         <h1>PROJECTS</h1>
         <div>
             <h1>OUR WORK</h1>
-            <p>VIEW ALL WORKS</p>
+            <p class="underline-3">VIEW ALL WORKS</p>
         </div>
     </article>
-    <article id="six-images">
-        <img src="p-1.jpg" />
-        <img src="p-2.jpg" />
-        <img style="padding-right:0" src="p-3.jpg" />
-        <img src="p-4.jpg" />
-        <img src="p-5.jpg" />
-        <img style="padding-right:0" src="p-6.jpg" />
-    </article>
+    <div class="sec-five-img-wrap">
+
+        <a class="project-wrapper">
+            <div class="image-wrap-div">
+                <img class="five-image" src="https://nuuk-e3eaa.firebaseapp.com/assets/img/p-1.jpg">
+                <div class="five-image-overlay">
+                    <div class="view-project-div">
+                        <div>View Project</div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a class="project-wrapper">
+            <div class="image-wrap-div">
+                <img class="five-image" src="https://nuuk-e3eaa.firebaseapp.com/assets/img/p-4.jpg">
+                <div class="five-image-overlay">
+                    <div class="view-project-div">
+                        <div>View Project</div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a class="project-wrapper">
+            <div class="image-wrap-div">
+                <img class="five-image" src="https://nuuk-e3eaa.firebaseapp.com/assets/img/p-3.jpg">
+                <div class="five-image-overlay">
+                    <div class="view-project-div">
+                        <div>View Project</div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="sec-five-img-wrap">
+
+        <a class="project-wrapper">
+            <div class="image-wrap-div">
+                <img class="five-image" src="https://nuuk-e3eaa.firebaseapp.com/assets/img/p-6.jpg">
+                <div class="five-image-overlay">
+                    <div class="view-project-div">
+                        <div>View Project</div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a class="project-wrapper">
+            <div class="image-wrap-div">
+                <img class="five-image" src="https://nuuk-e3eaa.firebaseapp.com/assets/img/p-5.jpg">
+                <div class="five-image-overlay">
+                    <div class="view-project-div">
+                        <div>View Project</div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a class="project-wrapper">
+            <div class="image-wrap-div">
+                <img class="five-image" src="https://nuuk-e3eaa.firebaseapp.com/assets/img/p-2.jpg">
+                <div class="five-image-overlay">
+                    <div class="view-project-div">
+                        <div>View Project</div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+</div>
+
     <article id="transparent-design">
-        <div >
+        <div style="position: relative;" >
          <h1>LET'S MAKE SOMETHING GREAT TOGETHER</h1>
          <p>Get in touch with us and send some basic info for a quick quote.</p>
-         <h2>Get Free Quote</h2>
+         <h2 class="underline-5">Get Free Quote</h2>
         </div>
     </article>
 
@@ -170,7 +240,7 @@
         <h1>Team</h1>
         <div>
             <h1>Professionals</h1>
-            <p>VIEW ALL WORKS</p>
+            <p class="underline-4">About us</p>
         </div>
     </article>
 
@@ -257,9 +327,9 @@
             <h1>"</h1>
             </div>
             <div>
-            <h4>SARA WILLIAM</h4>
+            <h4>JOHN JUNIOR</h4>
             <pre>CEO at Webflow</pre>
-            <p>"Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet"</p>
+            <p>"Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Cras varius. Etiam sit amet orci eget eros faucibus tincidunt. Fusce a quam"</p>
         </div>
         
         </div>
@@ -274,9 +344,9 @@
         <h1>"</h1>
         </div>
         <div>
-        <h4>SARA WILLIAM</h4>
-        <pre>CEO at Webflow</pre>
-        <p>"Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet"</p>
+        <h4>RAVEN DURGAN</h4>
+        <pre>Architect at Group</pre>
+        <p>"Aliquam eu nunc. Cras dapibus. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl"</p>
     </div>
     
     </div>
@@ -286,9 +356,9 @@
         <h1>"</h1>
         </div>
         <div>
-        <h4>SARA WILLIAM</h4>
-        <pre>CEO at Webflow</pre>
-        <p>"Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet"</p>
+        <h4>SAMI TYPO</h4>
+        <pre>SEO at Balfin</pre>
+        <p>"Vestibulum fringilla pede sit amet augue. Morbi ac felis. Ut a nisl id ante tempus hendrerit"</p>
     </div>
     
     </div>
@@ -306,7 +376,7 @@
         <h1>BLOG</h1>
         <div>
             <h1>LATEST NEWS</h1>
-            <p>VIEW BLOG</p>
+            <p class="underline-6">VIEW BLOG</p>
         </div>
     </article>
 
@@ -356,7 +426,7 @@
         <h1>ABOUT NUUK</h1>
         <div class="red-line"></div>
         <p>Based on collective work and shared knowledge, Nuuk aims to favor dialogue and debate, to transform individual knowledge into increased creative potential.</p>
-        <h3>Find On Map</h3>
+        <h3 class="underline-7">Find On Map</h3>
         <!-- <div class="footer-nuuk">
         <img class ="nuuk" src="logo-white.png">
         <div> -->
