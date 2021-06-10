@@ -1,0 +1,21 @@
+#btn-login{
+    font-size: 30px;
+}
+
+#todo-input-list{
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.one-item{
+    box-shadow: 0 0 10px greenyellow;
+    font-size: 25px;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 12px 12px;
+}
+
+#main-div{
+ margin: 100px auto;   
+ max-width: 500px;
+}
