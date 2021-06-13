@@ -17,6 +17,10 @@ if(e.key=="Enter"){
     //     </div>
     //     <i class="fas fa-trash-alt"></i>
     // </div> -->
+    if(inputBox.value == ""){
+        alert("Null Item");
+        return;
+    }
     var upperDiv = document.createElement("div");
     upperDiv.id = "upper-div";
 
