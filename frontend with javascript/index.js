@@ -238,7 +238,7 @@ var productList = [
         </div> */
 
 
-for(i=0; i<10; i++)
+for(i=0; i<productList.length; i++)
 {
 if(productList[i].isAccessory == false){
 var clothCard = document.getElementById("cloth-card")

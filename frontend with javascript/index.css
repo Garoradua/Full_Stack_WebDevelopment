@@ -7,7 +7,7 @@
 }
 #combined-cloth-card,#combined-accessories-card{
     width: 15%;
-    min-width: 200px;
+    max-width: 200px;
     height: auto;
     margin: 30px 10px;
     cursor: pointer;
@@ -61,4 +61,18 @@ img{
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
+}
+@media screen and (max-width:470px){
+    #combined-cloth-card,#combined-accessories-card{
+        width: 40%;
+        margin: 30px 10px;
+    }
+    #section-heading{
+        margin-top: 100px;
+        margin-left: 20px;
+    }   
+    #cloth-card,#accessories-card{
+    display: flex;
+    padding: 0;
+    }
 }
