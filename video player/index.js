@@ -8,6 +8,7 @@ var videoPlayer = document.getElementById("video-player");
 videoPlayer.src = "https://player.vimeo.com/video/190062231";
 var http = new XMLHttpRequest;
 http.open("GET", "https://5d76bf96515d1a0014085cf9.mockapi.io/playlist", true);
+http.send()
 http.onreadystatechange = function(){
     if(http.readyState==4){
     var response = JSON.parse(this.responseText);
@@ -23,11 +24,13 @@ http.onreadystatechange = function(){
  playlistCard.appendChild(pic);
  playlistCard.appendChild(heading);
 playlistWrapper.appendChild(playlistCard);
-}
-// playlistWrapper.addEventListener("click".function{
-//     videoPlayer.src
-// })
+    }
+// playlistCard.addEventListener("click",function(){
+//     if(response[1].id==2){
+//         alert("hi");
+//     }
+// });
+  
     }
 }
 // https://5d76bf96515d1a0014085cf9.mockapi.io/video/
-http.send()
