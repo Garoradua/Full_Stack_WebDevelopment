@@ -87,28 +87,72 @@ for(i=0; i<productData.photos.length; i++){
     Img.src= productData.photos[i];
     Img.id = i+1;
     previewImg1.appendChild(Img);
+
+    Img.addEventListener("click",function(e){
+      image.src = e.target.src;
+      console.log(e);
+      e.target.className = "active";
+    })
+    // Img.className = None;
 // 
 }
 productPreview.appendChild(previewImg1);
 productDescription.appendChild(productPreview);
 
-var img1 = document.getElementById("1");
-var photo1 = img1.src;
+// var img1 = document.getElementById("1");
+// var photo1 = img1.src;
 
-img1.addEventListener("click", function(){
-  image.src= photo1;
-  img1.className = "active";
-})
+// img1.addEventListener("click", function(){
+//   image.src= photo1;
+//   img1.className = none;
+// })
 
-var img2 = document.getElementById("2");
-var photo2 = img2.src;
+// var img2 = document.getElementById("2");
+// var photo2 = img2.src;
 
-img2.addEventListener("click", function(){
-  image.src= photo2;
-  img2.className = "active";
-})
+// img2.addEventListener("click", function(){
+//   image.src= photo2;
+//   img2.className = "active";
+// })
+// var img3 = document.getElementById("3");
+// var photo3 = img3.src;
 
+// img3.addEventListener("click", function(){
+//   image.src= photo3;
+//   img3.className = "active";
+// })
+// var img4 = document.getElementById("4");
+// var photo4 = img4.src;
+
+// img4.addEventListener("click", function(){
+//   image.src= photo4;
+//   img4.className = "active";
+// })
+// var img5 = document.getElementById("5");
+// var photo5 = img5.src;
+
+// img5.addEventListener("click", function(){
+//   image.src= photo5;
+//   img5.className = "active";
+// })
+// var mArr=[];
 // for( i=0; i<productData.photos.length; i++){
-//   var img = document.getElementById("i+1");
-//   var photo = 
+//   mArr[i] = productData.photos[i];
+//   // var "img"+i = "Hello"; 
 // }
+// for( i=0; i<productData.photos.length; i++){
+//  console.log(mArr[[i]]);
+//   // var "img"+i = "Hello"; 
+// }
+// img1.addEventListener("click",function(){
+//   img1.className = "active";
+//   image.src = mArr[0];
+// })
+// img2.addEventListener("click",function(){
+//   img2.className = "active";
+//   img1.className = none;
+//   img3.className = none;
+//   img4.className = none;
+//   img5.className = none;
+//   image.src = mArr[1];
+// })
