@@ -6,14 +6,14 @@
     display: flex;
     flex-wrap: wrap;
 }
-.left-column {
+#left-column {
     width: 40%;
 }
-.left-column img {
+#left-column img {
     width: 100%;
     margin-top: 50px;
 }
-.right-column {
+#right-column {
     width: 57%;
     margin-top: 40px;
     padding-left: 30px;
@@ -64,3 +64,12 @@ body{
     font-weight: 300;
     color: #86939e;
 }
+.active{
+    border: 3px solid #009688;
+}
+/* #description p{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #86939e;
+} */
