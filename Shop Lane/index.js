@@ -85,19 +85,27 @@ previewImg1.className = "previewImg";
 for(i=0; i<productData.photos.length; i++){
     var Img = document.createElement("img");
     Img.src= productData.photos[i];
-    Img.id = i+1;
+    Img.id = i;
     previewImg1.appendChild(Img);
 
     Img.addEventListener("click",function(e){
       image.src = e.target.src;
-      console.log(e);
-      e.target.className = "active";
+      for(var j=0; j<productData.photos.length; j++){
+        var value = document.getElementById(j);
+        if(j==this.id){
+          value.style.border = "3px solid #009688";
+        }else{
+          value.style.border = "0px";
+        }
+      }
     })
     // Img.className = None;
 // 
 }
 productPreview.appendChild(previewImg1);
 productDescription.appendChild(productPreview);
+var photo = document.getElementById("0");
+photo.style.border = "3px solid #009688";
 
 // var img1 = document.getElementById("1");
 // var photo1 = img1.src;
