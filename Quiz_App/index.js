@@ -13,5 +13,10 @@
 var quizForm = document.getElementById("quiz-form");
 var questionBar = document.getElementById("question-bar");
 var http = new XMLHttpRequest;
-http.open("https://5d76bf96515d1a0014085cf9.mockapi.io/quiz");
+http.open("GET", "https://5d76bf96515d1a0014085cf9.mockapi.io/quiz", true);
 http.send();
+http.onreadystatechange = function(){
+    if(this.readyState==4){
+        alert('hi');
+    }
+}
