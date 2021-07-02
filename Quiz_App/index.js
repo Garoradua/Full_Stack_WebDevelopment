@@ -1,22 +1,64 @@
-{/* <form id="quiz-form">    
-<p id = "question-bar"><b>Q1. Please select your age:</p></b>
-<input type="radio" id="age1" name="age" value="30">
-<label for="age1">0 - 30</label><br>
-<input type="radio" id="age2" name="age" value="60">
-<label for="age2">31 - 60</label><br>  
-<input type="radio" id="age3" name="age" value="100">
-<label for="age3">61 - 100</label><br><br>
-<!-- <input type="submit" value="Submit"> -->
-</form> */}
 
+$(document).ready(function(){
+    var form = $("#question-answer");
+    $.get("http://5d76bf96515d1a0014085cf9.mockapi.io/quiz",function(response){
+        
+        for(i=0; i<response.length; i++){
+            var section = $("<section>");
+            var question = $("<h3>").html("Q"+ response[i].id + " " + response[i].question);
+            section.append(question);
+            for(j=0; j<response[i].options.length; j++){
+                var label = $("<label>").addClass("option-wrapper");
+                var input = $("<input>").attr("type","radio").attr("name","q"+response[i].id).attr("value",(j+1)).attr("required","true");
+                var span = $("<span>").html(response[i].options[j]);
+                label.append(input);
+                label.append(span);
+                section.append(label);
+                
+            }
+            form.append(section);
+            
+        }
+        var result = [];
+        form.append($("<input>").attr("type","submit").addClass("submit"));
+        $(form).submit(function(e){
+            e.preventDefault();
+            var radioButton = $(".option-wrapper input");
+            for(var i=0; i<radioButton.length; i++){
+               if(radioButton[i].checked){
+                   result[radioButton[i].name] = radioButton[i].value;
+               }
+            }
+            // console.log(result);
+       
+            var count = 0;
+            for(i=0; i<response.length; i++){
+                if(result["q"+response[i].id]== response[i].answer){
+                    count++;
+                }
+            }
+            console.log(count);
+            $("#score").html(count+"/5")
+        })  
+    });
+});
 
-var quizForm = document.getElementById("quiz-form");
-var questionBar = document.getElementById("question-bar");
-var http = new XMLHttpRequest;
-http.open("GET", "https://5d76bf96515d1a0014085cf9.mockapi.io/quiz", true);
-http.send();
-http.onreadystatechange = function(){
-    if(this.readyState==4){
-        alert('hi');
-    }
-}
+// <!-- <section>
+// <h3> Q1 </h3>
+// <label class="option-wrapper" >
+// <input type="radio" name="q1" value="1"> 
+// <span>option 1</span>
+// </label>
+// <label class="option-wrapper">
+// <input type="radio" name="q1" value="2"> 
+// <span>option 2</span>
+// </label>
+// <label class="option-wrapper">
+// <input type="radio" name="q1" value="3"> 
+// <span>option 3</span>
+// </label>
+// <label class="option-wrapper">
+// <input type="radio" name="q1" value="4"> 
+// <span>option 4</span>
+// </label>
+// </section>
