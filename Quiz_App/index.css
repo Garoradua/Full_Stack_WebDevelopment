@@ -140,3 +140,9 @@ h3,label{
     flex-direction: column; */
     /* position: fixed; */
 }
+.tick{
+    color:green;
+}
+.wrong{
+    color:red;
+}

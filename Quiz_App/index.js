@@ -8,9 +8,11 @@ $(document).ready(function(){
             var question = $("<h3>").html("Q"+ response[i].id + " " + response[i].question);
             section.append(question);
             for(j=0; j<response[i].options.length; j++){
-                var label = $("<label>").addClass("option-wrapper");
+                var label = $("<label>").addClass("option-wrapper").attr("id","q"+response[i].id+"-"+(j+1));
                 var input = $("<input>").attr("type","radio").attr("name","q"+response[i].id).attr("value",(j+1)).attr("required","true");
+                // var icon = $("<i>");
                 var span = $("<span>").html(response[i].options[j]);
+                // span.append(icon);
                 label.append(input);
                 label.append(span);
                 section.append(label);
@@ -27,14 +29,23 @@ $(document).ready(function(){
             for(var i=0; i<radioButton.length; i++){
                if(radioButton[i].checked){
                    result[radioButton[i].name] = radioButton[i].value;
+    
                }
             }
-            // console.log(result);
+            console.log(result);
        
             var count = 0;
             for(i=0; i<response.length; i++){
                 if(result["q"+response[i].id]== response[i].answer){
                     count++;
+                   $("#q"+response[i].id+"-"+response[i].answer +" span").append('  <i class="fas fa-check"></i>').addClass("tick");
+                  
+                }
+                else{
+                    // var wrong = result[radioButton[i].name];
+                     $("#q"+response[i].id+"-"+result["q"+response[i].id] +" span").append('<i class="fas fa-times"></i>').addClass("wrong");
+                    //  append('<i  class="far fa-times"></i>');
+                     $("#q"+response[i].id+"-"+response[i].answer +" span").addClass("tick").append('<i class="fas fa-check"></i>');
                 }
             }
             console.log(count);
