@@ -28,7 +28,7 @@ body{
     margin: 0;
 }
 #player-section{
-    width: 100%;
+    width: 90%;
     background-color: #2B3252;
     border-radius: 6px;
     padding: 16px;
@@ -39,7 +39,7 @@ body{
 }
 #player-wrapper{
     width: 100%;
-    padding-right: 16px;
+    padding-left: 15px;
     /* border-bottom: 1px solid #fff748; */
 }
 #video-player{
