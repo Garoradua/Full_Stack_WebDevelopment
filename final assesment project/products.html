@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./index.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>  
+<title>Kafene Web Store</title>
+</head>
+<body>
+    <header>
+        <div id="topbar-left">
+           <div id="logo-wrap">
+               <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="kafene">
+               <p>Kafene</p>
+           </div>
+           <nav>
+            <a class="topbar-menu" href="./orders.html">Orders</a>
+            <a class="topbar-menu" href="./products.html">Products</a>
+            <a class="topbar-menu" href="./users.html">Users</a>
+           </nav>
+        </div>
+        <a class="topbar-menu" href="#">Logout</a>
+    </header>
+    <main>
+       <div id="homepage">
+           <h1>Products</h1>
+           <div class="item-container">
+            <div class="Homepage-FilterWrapper">
+           <h3>Filters</h3>
+         <div class="Homepage-FilterOptions">
+         <p>Count: 100</p>
+          <label class="Homepage-FilterCheckbox">
+             <input type="checkbox" name="orders-new" checked="">Expired</label>
+             <label class="Homepage-FilterCheckbox">
+             <input type="checkbox" name="orders-packed" checked="">Low Stock</label>
+               </div>
+             </div>
+             <div class="data-section">
+                <table class="Homepage-OrderTable">
+                    <tr class="table-head">
+                        <th>ID</th>
+                        <th>Product Name</th>
+                        <th>Product Brand</th>
+                        <th>Expiry Date</th>
+                        <th>Unit Price</th>
+                        <th>Stock</th>
+                    </tr>
+                <tbody id="product-data">
+                    
+                </tbody>
+                 </table>
+             </div>
+           </div>
+       </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
