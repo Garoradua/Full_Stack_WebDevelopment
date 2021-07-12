@@ -188,6 +188,7 @@ $(document).ready(function() {
 
         
         $(mainDiv).click(function(){
+          // console.log(this.id);
               $(this).addClass("active-card").siblings().removeClass("active-card")
               videofunction(this.id);
         })
