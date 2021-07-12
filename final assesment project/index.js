@@ -73,7 +73,6 @@ $(document).ready(function () {
             var rowFullName = document.createElement("td");
             rowFullName.className = "Homepage_PrimaryText";
             rowFullName.innerHTML = data[i].fullName;
-            // rowDate.appendChild(document.createElement("br"));
             var rowDob = document.createElement("td");
             rowDob.className = "Homepage_SecondaryText";
             rowDob.innerHTML = data[i].dob;
@@ -126,15 +125,14 @@ $(document).ready(function () {
     } 
 });
 var searchBox = $(".UserList_SearchBox");
-var itemTo = searchBox.val();
+// var itemTo = searchBox.val();
 
+var myInput = document.getElementById("myInput");
+myInput.addEventListener("keyup", function(){
 
-
-$(searchBox).keypress(function(event) {
-    if (event.which == 13) {
-        event.preventDefault();
-      var itemTo = searchBox.val();
-      $.get("https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/users?fullName=" + itemTo,function (data) {        
+      var itemTo = myInput.value;
+      var api = "https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/users?fullName="+ itemTo;
+      $.get(api,function (data) {        
           
             for(var i=0; i<data.length;i++){
             var row = document.createElement("tr");
@@ -167,16 +165,29 @@ $(searchBox).keypress(function(event) {
             row.appendChild(rowGender);
             row.appendChild(rowCurrentCity);
             userData.append(row);
-        } 
        console.log(data);
-    
-        
+            }
     });
-     
-    
-    }
 });
+    
+    
 
+// function myFunction() {
+//     var input, filter, ul, li, a, i, txtValue;
+//     input = document.getElementById("myInput");
+//     filter = input.value.toUpperCase();
+//     ul = document.getElementById("");
+//     li = ul.getElementsByTagName("li");
+//     for (i = 0; i < li.length; i++) {
+//         a = li[i].getElementsByTagName("a")[0];
+//         txtValue = a.textContent || a.innerText;
+//         if (txtValue.toUpperCase().indexOf(filter) > -1) {
+//             li[i].style.display = "";
+//         } else {
+//             li[i].style.display = "none";
+//         }
+//     }
+// }
 
 
 
