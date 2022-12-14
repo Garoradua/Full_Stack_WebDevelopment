@@ -1,0 +1,27 @@
+#todo-list{
+    width: 100%;
+    max-width: 600px; 
+    text-align: center;
+    margin: 0 auto;
+}
+form{
+    width: 100%;
+    max-width: 600px; 
+    text-align: center;
+    margin: 0 auto;
+}
+.list-items{
+    border: 2px solid black;
+    /* margin: 20px; */
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 1px 1px 10px grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#todo-list i{
+    border: 2px solid seagreen;
+    cursor: pointer;
+}
